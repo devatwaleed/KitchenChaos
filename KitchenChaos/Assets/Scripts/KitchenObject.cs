@@ -6,49 +6,18 @@ public class KitchenObject : MonoBehaviour {
 
     [SerializeField] private KitchenObjectSO kitchenObjectSO;
 
-    private IKitchenObjectParent kitchenObjectParent;
+    private ClearCounter clearCounter;
 
     public KitchenObjectSO GetKitchenObjectSO() {
         return kitchenObjectSO;
     }
 
-
-    public void SetKitchenObjectParent(IKitchenObjectParent kitchenObjectParent) {
-        if (this.kitchenObjectParent != null) {
-            this.kitchenObjectParent.ClearKitchenObject();
-        }
-        this.kitchenObjectParent = kitchenObjectParent;
-
-        if (kitchenObjectParent.HasKitchenObject()) {
-            Debug.LogError("Already Assigned");
-        }
-        kitchenObjectParent.SetKitchenObject(this);
-
-        transform.parent = kitchenObjectParent.GetKitchenObjectFollowTransform();
-        transform.localPosition = Vector3.zero;
+    public void SetClearCounter(ClearCounter clearCounter) {
+        this.clearCounter = clearCounter;
     }
 
-    public IKitchenObjectParent GetKitchenObjectParent() {
-        return kitchenObjectParent;
-    }
-
-    public void DestroySelf() {
-        kitchenObjectParent.ClearKitchenObject();
-        
-        Destroy(gameObject);
-    }
-
-
-
-    public static KitchenObject SpawnKitchenObject(KitchenObjectSO kitchenObjectSO, IKitchenObjectParent kitchenObjectParent) {
-
-        Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab);
-
-        KitchenObject kitchenObject= kitchenObjectTransform.GetComponent<KitchenObject>();
-
-        kitchenObject.SetKitchenObjectParent(kitchenObjectParent);
-
-        return kitchenObject;
+    public ClearCounter GetClearCounter() {
+        return clearCounter;
     }
 
 }

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 957a31fd6e3e6ea49821166e1a70bd8b, type: 3}
-  m_Name: CheeseBlockSlices
+  m_Name: MeatPattyCooked
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5438597792171911598, guid: ad55ba79feb2a26409258d82210d9514, type: 3}
-  sprite: {fileID: 21300000, guid: 549cb4f2b86d1b84d8cd41c1cfde26c8, type: 3}
-  objectName: CheeseBlockSlice
+  prefab: {fileID: 5438597792171911598, guid: 9ec3dfc520a13a6429d09bddd74a57e3, type: 3}
+  sprite: {fileID: 21300000, guid: f1f50c7ef90b19741b26f2040806cf56, type: 3}
+  objectName: Meat Patty Cooked

@@ -15,7 +15,6 @@ public class ClearCounter : BaseCounter{
             if (player.HasKitchenObject()) {
                 //Player have something
                 player.GetKitchenObject().SetKitchenObjectParent(this);
-                Debug.Log("This is that something" + this);
             }else {
                 //Player has nothing
 

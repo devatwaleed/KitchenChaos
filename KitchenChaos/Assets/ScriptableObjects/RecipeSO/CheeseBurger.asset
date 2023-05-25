@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5555815a9b5dc944eb4e0c8e8025371c, type: 2}
   - {fileID: 11400000, guid: 7f6e23a7b8e082a4dad5cc01bfd8737f, type: 2}
   - {fileID: 11400000, guid: 377656ce6004a724aba129d5a3c06534, type: 2}
-  RecipeName: CheeseBurger
+  recipeName: CheeseBurger

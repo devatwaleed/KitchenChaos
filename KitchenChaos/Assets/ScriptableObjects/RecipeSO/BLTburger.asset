@@ -16,4 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7f6e23a7b8e082a4dad5cc01bfd8737f, type: 2}
   - {fileID: 11400000, guid: fc1f9f00489bb0241b5f12ce2f7727d3, type: 2}
   - {fileID: 11400000, guid: 793630607ac18e149892972ffe69f945, type: 2}
-  RecipeName: BLTburger
+  recipeName: BLTburger

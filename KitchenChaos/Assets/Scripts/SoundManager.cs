@@ -76,11 +76,12 @@ public class SoundManager : MonoBehaviour{
 
     }
 
-    public void PlayCountDownSound()
-    {
-
+    public void PlayCountDownSound(){
         PlaySound(audioClipsRefSO.warning, Vector3.zero);
+    }
 
+    public void PlayWarningSound(Vector3 position){
+        PlaySound(audioClipsRefSO.warning, position);
     }
 
     public void ChangeVolume() {
